@@ -1,5 +1,5 @@
 ---
-title: Mac安装Scrapy
+title: phpmyadmin更改MySQL密码
 date: 2017-03-17 17:30:48
 tags:
 ---
