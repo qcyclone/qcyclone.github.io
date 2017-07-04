@@ -1,4 +1,6 @@
-<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Mac安装Scrapy | qcyclone</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/very-simple.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"></head><body><!-- include the sidebar--><!-- include ./includes/sidebar.jade--><!-- Blog title and subtitle--><header><div class="container header"><a id="logo" href="/." class="title">qcyclone</a><span class="subtitle">stay hungry stay foolish</span><label id="toggle-menu" for="menu" onclick><i class="fa fa-bars"></i></label></div></header><!-- use checkbox hack for toggle nav-bar on small screens--><input id="menu" type="checkbox"><!-- Navigation Links--><nav id="nav"><div class="container"><a href="/" class="sidebar-nav-item active">Home</a><a href="/archives" class="sidebar-nav-item">Archives</a></div></nav><div id="header-margin-bar"></div><!-- gallery that comes before the header--><div class="wrapper"><div class="container post-header"><h1>Mac安装Scrapy</h1></div></div><div class="wrapper"><div class="container meta"><div class="post-time">2017-03-17</div></div></div><article><div class="container post"><h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><ul>
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title> | qcyclone</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/very-simple.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"></head><body><!-- include the sidebar--><!-- include ./includes/sidebar.jade--><!-- Blog title and subtitle--><header><div class="container header"><a id="logo" href="/." class="title">qcyclone</a><span class="subtitle">stay hungry stay foolish</span><label id="toggle-menu" for="menu" onclick><i class="fa fa-bars"></i></label></div></header><!-- use checkbox hack for toggle nav-bar on small screens--><input id="menu" type="checkbox"><!-- Navigation Links--><nav id="nav"><div class="container"><a href="/" class="sidebar-nav-item active">Home</a><a href="/archives" class="sidebar-nav-item">Archives</a></div></nav><div id="header-margin-bar"></div><!-- gallery that comes before the header--><div class="wrapper"><div class="container post-header"><h1></h1></div></div><div class="wrapper"><div class="container meta"><div class="post-time">2017-03-17</div></div></div><article><div class="container post"><hr>
+<p>title: Mac安装Scrapy<br>date: 2017-03-16 17:30:48</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><ul>
 <li>macOS 10.12.3</li>
 <li>Python 2.7.10</li>
 <li>XAMPP</li>
@@ -6,36 +8,45 @@
 <h2 id="安装pip"><a href="#安装pip" class="headerlink" title="安装pip"></a>安装pip</h2><p>这里有两种方法</p>
 <ol>
 <li>直接这样<br> <code>sudo easy_install pip</code></li>
-<li><p>安装Homebrew<br><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
-<p> 安装wget</p>
- <figure class="highlight plain"><figcaption><span>install wget```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">安装pip</div><div class="line">```wget https://bootstrap.pypa.io/get-pip.py</div></pre></td></tr></table></figure>
- <figure class="highlight plain"><figcaption><span>python get-pip.py```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">	</div><div class="line">## 安装Scrapy</div><div class="line">```sudo pip install Scrapy</div></pre></td></tr></table></figure>
-</li>
+<li>安装Homebrew </li>
 </ol>
-<p>运行发现错误<br> <figure class="highlight plain"><figcaption><span>'module' object has no attribute 'OP_NO_TLSv1_1'```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">原因是自带安装的Twisted-17.1.0版本过高。</div><div class="line"></div><div class="line">我们这里安装较低的版本</div><div class="line"></div><div class="line">```sudo pip install Twisted==16.4.1</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</div></pre></td></tr></table></figure>
+<p>安装wget<br><code>brew install wget</code><br>安装pip<br><code>wget https://bootstrap.pypa.io/get-pip.py</code><br><code>sudo python get-pip.py</code></p>
+<h2 id="安装Scrapy"><a href="#安装Scrapy" class="headerlink" title="安装Scrapy"></a>安装Scrapy</h2><p><code>sudo pip install Scrapy</code></p>
+<p>运行发现错误<br> <code>AttributeError: &#39;module&#39; object has no attribute &#39;OP_NO_TLSv1_1&#39;</code><br>原因是自带安装的Twisted-17.1.0版本过高。</p>
+<p>我们这里安装较低的版本</p>
+<p><code>sudo pip install Twisted==16.4.1</code></p>
 <h2 id="各种包的安装"><a href="#各种包的安装" class="headerlink" title="各种包的安装"></a>各种包的安装</h2><ul>
-<li>requests  <figure class="highlight plain"><figcaption><span>pip install requests```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">* MySQLdb  </div><div class="line">  **利用pip安装**</div><div class="line">  </div><div class="line"> 	 ```pip install MySQL-python</div></pre></td></tr></table></figure></li>
+<li>requests<br><code>sudo pip install requests</code></li>
+<li>MySQLdb  </li>
 </ul>
-<pre><code>发现错误 <figure class="highlight plain"><figcaption><span>mysql_config not found```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">  </div><div class="line">执行 ```export PATH=$PATH:/Applications/XAMPP/bin</div></pre></td></tr></table></figure>
-
-
-然后安装<figure class="highlight plain"><figcaption><span>install MySQL-python```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line"> **手工安装**</div><div class="line"> </div><div class="line"> &lt;http://sourceforge.net/projects/mysql-python/files/&gt;这里下载，解压缩</div><div class="line"> </div><div class="line">然后找到site.cfg文件，</div><div class="line"> 	更改</div><div class="line"> 	```mysql_config = /Applications/MAMP/Library/bin/mysql_config</div></pre></td></tr></table></figure>
-
-
-执行
-<figure class="highlight plain"><figcaption><span>python setup.py build```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">  </div><div class="line">***</div><div class="line">  </div><div class="line">### 走到这里又出现了错误</div><div class="line">  </div><div class="line">```  </div><div class="line">_mysql.c:44:10: fatal error: &apos;my_config.h&apos; file not found</div><div class="line">	#include &quot;my_config.h&quot;</div><div class="line">         ^</div><div class="line">1 error generated.</div><div class="line">error: command &apos;cc&apos; failed with exit status 1</div></pre></td></tr></table></figure>
-</code></pre><p>找了很长时间终于找到了解决方法<a href="http://www.sunnyos.com/article-show-38.html" target="_blank" rel="external">http://www.sunnyos.com/article-show-38.html</a></p>
+<p><strong>利用pip安装</strong></p>
+<p><code>pip install MySQL-python</code></p>
+<p>发现错误<br><code>EnvironmentError: mysql_config not found</code></p>
+<p>执行<br><code>export PATH=$PATH:/Applications/XAMPP/bin</code></p>
+<p>然后安装<br><code>pip install MySQL-python</code></p>
+<p><strong>手工安装</strong></p>
+<p><a href="http://sourceforge.net/projects/mysql-python/files/" target="_blank" rel="external">http://sourceforge.net/projects/mysql-python/files/</a>这里下载，解压缩</p>
+<p>然后找到site.cfg文件，更改<br>      <code>mysql_config = /Applications/MAMP/Library/bin/mysql_config</code><br>执行<br>  <code>sudo python setup.py build</code></p>
+<h3 id="走到这里又出现了错误"><a href="#走到这里又出现了错误" class="headerlink" title="走到这里又出现了错误"></a>走到这里又出现了错误</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">_mysql.c:44:10: fatal error: &apos;my_config.h&apos; file not found</div><div class="line">	#include &quot;my_config.h&quot;</div><div class="line">         ^</div><div class="line">1 error generated.</div><div class="line">error: command &apos;cc&apos; failed with exit status 1</div></pre></td></tr></table></figure>
+<p>找了很长时间终于找到了解决方法<a href="http://www.sunnyos.com/article-show-38.html" target="_blank" rel="external">http://www.sunnyos.com/article-show-38.html</a></p>
 <p>  这个错误意思是找不到头文件，原因是MySQL不是单独装的。而是用的XAMPP集成环境。XAMPP中PHP和MySQL的头文件都是没有的，所以会报出这个错误。</p>
 <p>  一种解决方法是安装mysq-connector-c</p>
-  <figure class="highlight plain"><figcaption><span>install mysql-connector-c```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">OK，终于解决了</div><div class="line">***</div><div class="line"></div><div class="line"> 安装 ```pip install MySQL-python</div></pre></td></tr></table></figure>
+<p>  <code>brew install mysql-connector-c</code></p>
+<p>  OK，终于解决了</p>
+<hr>
+<p>   安装 <code>pip install MySQL-python</code></p>
 <p>   如果手动，则需要:</p>
-   <figure class="highlight plain"><figcaption><span>python setup.py build```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```sudo python setup.py install</div></pre></td></tr></table></figure>
+<p>   <code>sudo python setup.py build</code></p>
+<p>   <code>sudo python setup.py install</code></p>
 <ul>
-<li>PIL<figure class="highlight plain"><figcaption><span>easy_install -f</span><a href="http://www.pythonware.com/products/pil/" target="_blank" rel="external">Imaging```</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">```sudo pip install -U Pillow</div></pre></td></tr></table></figure>
-</li>
+<li>PIL</li>
 </ul>
-<h2 id="Mysql连接问题"><a href="#Mysql连接问题" class="headerlink" title="Mysql连接问题"></a>Mysql连接问题</h2><p>  <code>OperationalError: (2002, &quot;Can&#39;t connect to local MySQL server through socket &#39;/tmp/mysql.sock&#39; (2)&quot;)</code><br>  执行<br>  <code>ln -s /applications/xampp/xamppfiles/var/mysql/mysql.sock /tmp/mysql.sock</code> </p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>  至此，终于全部安装完成。愉快的抓取了。</p>
+<p><code>sudo easy_install -f http://www.pythonware.com/products/pil/ Imaging</code></p>
+<p><code>sudo pip install -U Pillow</code></p>
+<h2 id="Mysql连接问题"><a href="#Mysql连接问题" class="headerlink" title="Mysql连接问题"></a>Mysql连接问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">OperationalError: (2002, &quot;Can&apos;t connect to local MySQL server through socket &apos;/tmp/mysql.sock&apos; (2)&quot;)</div></pre></td></tr></table></figure>
+<p>执行<br><code>ln -s /applications/xampp/xamppfiles/var/mysql/mysql.sock /tmp/mysql.sock</code></p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>至此，终于全部安装完成。愉快的抓取了。</p>
 <ul>
 <li>2017/3/16 完成</li>
 </ul>

@@ -18,4 +18,5 @@ fancybox: true # set to true if you want to use it
 duoshuo: #duoshuo_shortname
 disqus: #disqus _shortname
 google_analytics: #Google Analytics Tracking Code
+baidu_tongji: true
 google_adsense_page_level_ads: #Google Adsense Page Level Ads Code
