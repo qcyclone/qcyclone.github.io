@@ -1,7 +1,6 @@
 ---
 title: Mac安装Scrapy
-date: 2017-03-16 17:30:48
-tags:
+date: 2017-03-16
 ---
 
 ## 平台
