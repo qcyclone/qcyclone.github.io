@@ -18,7 +18,7 @@ date: 2017-03-16
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
+<!--more-->
 安装wget
 `brew install wget`
 安装pip
