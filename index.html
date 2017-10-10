@@ -127,6 +127,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?af373aa41962c1bfa014078ad0a0b06a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -234,6 +244,151 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/10/linux常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qcyclone">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qcyclone">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/10/linux常用命令/" itemprop="url">Linux常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-10T09:03:30+08:00">
+                2017-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>2017-10-10 v1.0</li>
+</ul>
+<p>最近需要频繁的使用Linux服务器，也慢慢积累了些常用命令。</p>
+<h3 id="ssh连接"><a href="#ssh连接" class="headerlink" title="ssh连接"></a>ssh连接</h3><ol>
+<li><code>ssh -p 端口号 用户名@ip</code><br>一般ssh服务端口号为22，如果是22端口号则可省略不写。</li>
+</ol>
+<h3 id="查看进程状态"><a href="#查看进程状态" class="headerlink" title="查看进程状态"></a>查看进程状态</h3><ol>
+<li><code>top</code>命令类似于Win下面的进程管理器，在这里还可以看到CPU，内存的使用情况。</li>
+<li><code>ps -a</code>用于报告系统的进程状态，我一般用来查看程序运行的时间。</li>
+<li><code>nvidia-smi</code>用来查看显卡的使用情况。<code>watch -n 10 nvidia-smi</code>持续监视显卡的状态，每10s刷新一次。</li>
+</ol>
+<h3 id="vim操作"><a href="#vim操作" class="headerlink" title="vim操作"></a>vim操作</h3><p>vim是一个很强大的文本编辑器。目前只掌握了皮毛。</p>
+<ol>
+<li><code>:wq</code>保存退出。有时由于账户权限不够，出现read only的情况，需要进行强制退出<code>:q!</code>。</li>
+<li><code>:行号</code>直接跳转到对应行号。</li>
+<li><code>:set number``:set nonumber</code>设置行号与取消行号。</li>
+</ol>
+<h3 id="文件比较"><a href="#文件比较" class="headerlink" title="文件比较"></a>文件比较</h3><ol>
+<li><code>diff -y 文件1 文件2</code>比较两个文件差异，-y用于两个文件成列比较，方便观察。</li>
+</ol>
+<h3 id="软件使用"><a href="#软件使用" class="headerlink" title="软件使用"></a>软件使用</h3><ol>
+<li><code>make</code>命令用于编译程序，通常会优先寻找当前目录下的makefile文件，makefile文件是编译的脚本，当源文件很多时，使用编译脚本会很便捷。</li>
+<li><code>install</code>用于安装。</li>
+<li>若当前路径被加入系统的环境变量，直接输入可执行文件名就能运行；也可以带上绝对路径或相对路径来运行，所以出现了常用的方式<code>./程序名称</code>。</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -548,7 +703,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -556,6 +711,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
