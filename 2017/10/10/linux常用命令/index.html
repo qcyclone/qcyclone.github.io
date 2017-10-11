@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="技术 Linux," />
+  <meta name="keywords" content="技术,Linux," />
 
 
 
@@ -80,6 +80,7 @@
 
 
 <meta name="description" content="2017-10-10 v1.0
+2017-10-11 v1.1
 
 最近需要频繁的使用Linux服务器，也慢慢积累了些常用命令。
 ssh连接
@@ -87,13 +88,13 @@ ssh -p 端口号 用户名@ip一般ssh服务端口号为22，如果是22端口�
 
 查看进程状态
 top命令类似于Win下面的进程管理器，在这里还可以看到CPU，内存的使用情况。
-ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。
-nvidia-smi用来查看显卡">
+ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="http://yoursite.com/2017/10/10/linux常用命令/index.html">
 <meta property="og:site_name" content="qcyclone">
 <meta property="og:description" content="2017-10-10 v1.0
+2017-10-11 v1.1
 
 最近需要频繁的使用Linux服务器，也慢慢积累了些常用命令。
 ssh连接
@@ -101,12 +102,12 @@ ssh -p 端口号 用户名@ip一般ssh服务端口号为22，如果是22端口�
 
 查看进程状态
 top命令类似于Win下面的进程管理器，在这里还可以看到CPU，内存的使用情况。
-ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。
-nvidia-smi用来查看显卡">
-<meta property="og:updated_time" content="2017-10-10T01:51:46.000Z">
+ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。">
+<meta property="og:updated_time" content="2017-10-11T12:24:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="2017-10-10 v1.0
+2017-10-11 v1.1
 
 最近需要频繁的使用Linux服务器，也慢慢积累了些常用命令。
 ssh连接
@@ -114,8 +115,7 @@ ssh -p 端口号 用户名@ip一般ssh服务端口号为22，如果是22端口�
 
 查看进程状态
 top命令类似于Win下面的进程管理器，在这里还可以看到CPU，内存的使用情况。
-ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。
-nvidia-smi用来查看显卡">
+ps -a用于报告系统的进程状态，我一般用来查看程序运行的时间。">
 
 
 
@@ -246,6 +246,26 @@ nvidia-smi用来查看显卡">
         </li>
       
         
+        <li class="menu-item menu-item-tech">
+          <a href="/categories/通天塔/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            通天塔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-play">
+          <a href="/categories/好望角/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            好望角
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -328,6 +348,28 @@ nvidia-smi用来查看显卡">
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/通天塔/" itemprop="url" rel="index">
+                    <span itemprop="name">通天塔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -357,6 +399,7 @@ nvidia-smi用来查看显卡">
       
         <ul>
 <li>2017-10-10 v1.0</li>
+<li>2017-10-11 v1.1</li>
 </ul>
 <p>最近需要频繁的使用Linux服务器，也慢慢积累了些常用命令。</p>
 <h3 id="ssh连接"><a href="#ssh连接" class="headerlink" title="ssh连接"></a>ssh连接</h3><ol>
@@ -381,6 +424,12 @@ nvidia-smi用来查看显卡">
 <li><code>install</code>用于安装。</li>
 <li>若当前路径被加入系统的环境变量，直接输入可执行文件名就能运行；也可以带上绝对路径或相对路径来运行，所以出现了常用的方式<code>./程序名称</code>。</li>
 </ol>
+<h3 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h3><ol>
+<li><code>chsh -l</code>  <code>cat /etc/shells</code>查看系统中的shell</li>
+<li><code>chsh</code> <code>sh</code>切换shell</li>
+<li><code>echo $SHELL</code>查看系统默认的shell</li>
+<li><code>echo $0</code>查看当前的shell</li>
+</ol>
 
       
     </div>
@@ -398,7 +447,9 @@ nvidia-smi用来查看显卡">
       
         <div class="post-tags">
           
-            <a href="/tags/技术-Linux/" rel="tag"># 技术 Linux</a>
+            <a href="/tags/技术/" rel="tag"># 技术</a>
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
         </div>
       
@@ -507,13 +558,22 @@ nvidia-smi用来查看显卡">
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -548,7 +608,7 @@ nvidia-smi用来查看显卡">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ssh连接"><span class="nav-number">1.</span> <span class="nav-text">ssh连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看进程状态"><span class="nav-number">2.</span> <span class="nav-text">查看进程状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vim操作"><span class="nav-number">3.</span> <span class="nav-text">vim操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件比较"><span class="nav-number">4.</span> <span class="nav-text">文件比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件使用"><span class="nav-number">5.</span> <span class="nav-text">软件使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ssh连接"><span class="nav-number">1.</span> <span class="nav-text">ssh连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看进程状态"><span class="nav-number">2.</span> <span class="nav-text">查看进程状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vim操作"><span class="nav-number">3.</span> <span class="nav-text">vim操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件比较"><span class="nav-number">4.</span> <span class="nav-text">文件比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件使用"><span class="nav-number">5.</span> <span class="nav-text">软件使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shell"><span class="nav-number">6.</span> <span class="nav-text">shell</span></a></li></ol></div>
             
 
           </div>
