@@ -42,3 +42,5 @@ vim是一个很强大的文本编辑器。目前只掌握了皮毛。
 4. `echo $0`查看当前的shell
 
 
+### 其他
+1. `nvidia-smi topo --matrix` 查看GPU拓扑结构
